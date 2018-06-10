@@ -1,0 +1,39 @@
+(#{issue}) comment
+
+; この変更はなぜ必要でしたか? >
+
+; この問題にどうやって対処しましたか? >
+
+; この変更によって影響を受けるものは何ですか? >
+
+; 関連するチケット，issueがあれば記載して下さい >
+; #{issue}
+; close #{issue}
+
+; comment は以下参考
+; タイトルを50文字以内におさめる
+; 命令形で文頭を大文字に
+; 文末のピリオドは不要
+; タイトルの後は一行空けて本文を書く
+;
+; 以下，commitの例文
+; 例文)
+; - Fix A in B (Bの箇所のAを修正)
+; - Fix for #{issue} (#{issue}に対する修正)
+; - Add A to B (AをBに追加)
+; - Remove A from B (AをBから除去)
+; - Remove unused A (不必要なAを除去)
+; - Use A instead of B (AをBの代わりに用いる)
+; - Change A to B (AをBに変更)
+; - A in B out (AをBの変わりに導入)
+; - Address an issue with A (Aの問題を解決)
+; 特殊)
+; - resurrect (蘇えらせる)
+; - kick out (好ましくないものを取り除く)
+; - R.I.P. (安らかに眠れ ～Removeでは語りきれない思いがあるとき～)
+; - cosmetic change (インデントを美しくした時など)
+;
+; 前置詞)
+; - with P (Pと一緒に、伴って)
+; - for P (Pのために)
+; - instead of P (Pの代わりに)
