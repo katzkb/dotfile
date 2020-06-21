@@ -1,0 +1,32 @@
+# main-viewの左端にコミットIDを表示する
+set main-view = id date author commit-title:graph=yes,refs=yes
+
+# Visualization
+set id-width = 8
+set blame-options = -C -C -C
+set horizontal-scroll = 33%
+set show-notes = yes
+set show-changes = yes
+set vertical-split = no
+set split-view-height = 80%
+set status-show-untracked-dirs = yes
+set tab-size = 2
+set diff-context = 3
+set line-graphics = ascii
+# set diff-highlight = true
+# set diff-so-fancy = true
+# 空白も全て差分を取る
+set ignore-space = no
+# 空白は無視する
+#set ignore-space = all
+# 行末文字を無視する
+# set ignore-space = at-eol
+set commit-order = topo
+#set ignore-case = yes
+#set wrap-lines = yes
+set focus-child = yes
+# E で commit --allow-empty
+bind status E !git commit --allow-empty
+bind status N !git commit --no-verify
+# c で hashをコピー
+bind generic c !@bash -c "cut -c-7 <<<%(commit) | xargs echo -n | pbcopy"
