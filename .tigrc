@@ -28,5 +28,4 @@ set focus-child = yes
 # E で commit --allow-empty
 bind status E !git commit --allow-empty
 bind status N !git commit --no-verify
-# c で hashをコピー
-bind generic c !@bash -c "cut -c-7 <<<%(commit) | xargs echo -n | pbcopy"
+bind generic D      !git difftool --tool=delta --no-prompt --trust-exit-code %(commit)^!
