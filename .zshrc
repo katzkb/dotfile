@@ -114,9 +114,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 #export COURSIER_TTL=1s
  
-# nvm
-#export NVM_DIR="$(readlink -f $HOME)/.nvm"
-#source $(brew --prefix nvm)/nvm.sh
 #unalias mysql
 
 # go
@@ -160,33 +157,13 @@ if [ -f /Users/katsuya.kubo/.tnsrc ]; then
 fi
 ###-tns-completion-end-###
 
-# place this after nvm initialization!
-#autoload -U add-zsh-hook
-#load-nvmrc() {
-#  local node_version="$(nvm version)"
-#  local nvmrc_path="$(nvm_find_nvmrc)"
-#  if [ -n "$nvmrc_path" ]; then
-#    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-#    if [ "$nvmrc_node_version" = "N/A" ]; then
-#      nvm install
-#    elif [ "$nvmrc_node_version" != "$node_version" ]; then
-#      nvm use
-#    fi
-#  elif [ "$node_version" != "$(nvm version default)" ]; then
-#    echo "Reverting to nvm default version"
-#    nvm use default
-#  fi
-#}
-#add-zsh-hook chpwd load-nvmrc
-#load-nvmrc
-
 eval "$(fnm env --use-on-cd)"
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # Setting for angular project
-export NODE_OPTIONS="--max-old-space-size=2048"
+export NODE_OPTIONS="--max-old-space-size=4096"
 
 # Setting for kidsna-connect-wp local
 export WORDPRESS_HOME="http://localhost/site"
