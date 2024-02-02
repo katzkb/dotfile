@@ -1,0 +1,13 @@
+*~
+.DS_Store
+node_modules/
+bower_components/
+.idea/
+.history
+.metals
+.vscode
+.bloop
+project/metals.ebt
+project/
+*vite.config.js.timestamp-*.mjs
+.bsp/sbt.json

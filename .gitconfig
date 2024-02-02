@@ -1,0 +1,33 @@
+[core]
+	excludesfile = /Users/katsuya.kubo/.gitignore_global
+	pager = delta
+[user]
+	name = Katsuya Kubo
+	email = katsuya.kubo@nextbeat.net
+[delta]
+    features = side-by-side line-numbers decorations
+    syntax-theme = Dracula
+#    plus-style = syntax "#003800"
+#    minus-style = syntax "#3f0001"
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    hunk-header-decoration-style = cyan box ul
+
+[delta "line-numbers"]
+    line-numbers-left-style = cyan
+    line-numbers-right-style = cyan
+    line-numbers-minus-style = 124
+    line-numbers-plus-style = 28
+[interactive]
+    diffFilter = delta --color-only
+[pull]
+	rebase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+#[remote "origin"]
+#   fetch = +refs/heads/*:refs/remotes/origin/*

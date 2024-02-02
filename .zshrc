@@ -65,10 +65,9 @@ alias cl="clear"
 alias less="less -sNiMR --tilde --max-forw-scroll=1 --window=1 --shift 1"
 alias his="history -E 1"
 # alias git='hub'
-# alias dckm="docker exec -it kintai_mysql"
-# alias dckw="docker exec -it kintai_web"
 alias ys="yarn start"
 alias ghc="git checkout develop"
+alias nn="nnn -deHa -aP r"
 
 # No beep
 setopt nolistbeep
@@ -88,8 +87,6 @@ if [[ -d $(git --exec-path) ]]; then
     eval "alias g${file/*git-/}='git ${file/*git-/}'"
   end
 fi
-
-# eval "$(anyenv init - --no-rehash)"
 
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
@@ -113,7 +110,7 @@ alias egrep='egrep --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 #export COURSIER_TTL=1s
- 
+
 #unalias mysql
 
 # go
@@ -125,19 +122,6 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$GOLOCAL/bin
 if [ $DOTFILES/.zshrc -nt ~/.zshrc.zwc ]; then
   zcompile ~/.zshrc
 fi
-
-#source ~/.bin/tmuxinator.zsh
-
-#cd /Volumes/dev/kidzna-connect/
-
-#
-#echo -e "
-#   __    ____  ____    __       ___  _____  __  __  ____   __    _  _  _  _ 
-#  /__\  (  _ \(_  _)  /__\     / __)(  _  )(  \/  )(  _ \ /__\  ( \( )( \/ )
-# /(__)\  )   / _)(_  /(__)\   ( (__  )(_)(  )    (  )___//(__)\  )  (  \  / 
-#(__)(__)(_)\_)(____)(__)(__)   \___)(_____)(_/\/\_)(__) (__)(__)(_)\_) (__) 
-#
-# 01000001 01010010 01001001 01000001  01000011 01001111 01001101 01010000 01000001 01001110 01011001 
 
 # "
 export PATH="${HOME}/.scalaenv/bin:${PATH}"
@@ -152,8 +136,8 @@ eval $(thefuck --alias)
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 ###-tns-completion-start-###
-if [ -f /Users/katsuya.kubo/.tnsrc ]; then 
-    source /Users/katsuya.kubo/.tnsrc 
+if [ -f /Users/katsuya.kubo/.tnsrc ]; then
+    source /Users/katsuya.kubo/.tnsrc
 fi
 ###-tns-completion-end-###
 
@@ -173,3 +157,21 @@ export WORDPRESS_SITEURL="http://localhost/site"
 export NG_CLI_ANALYTICS=ci
 # Alacrittyの通知バウンスを無効化
 printf "\e[?1042l"
+
+# Bun
+## bun completions
+[ -s "/Users/katsuya.kubo/.bun/_bun" ] && source "/Users/katsuya.kubo/.bun/_bun"
+
+## bun path
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(direnv hook zsh)"
+
+eval "$(sheldon source)"
+
+# NNN Plugins
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_PLUG='r:preview-tui'
+
+# eval "$(starship init zsh)"

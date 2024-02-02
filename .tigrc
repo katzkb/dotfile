@@ -29,3 +29,5 @@ set focus-child = yes
 bind status E !git commit --allow-empty
 bind status N !git commit --no-verify
 bind generic D      !git difftool --tool=delta --no-prompt --trust-exit-code %(commit)^!
+# git commit に commitzen を利用する
+# bind status C !git cz
