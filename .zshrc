@@ -95,6 +95,7 @@ export PATH="/usr/lib/:$PATH"
 
 # PATH
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:${PATH}
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 
 # Terminal
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
@@ -126,7 +127,6 @@ fi
 # "
 export PATH="${HOME}/.scalaenv/bin:${PATH}"
 eval "$(scalaenv init -)"
-export HOMEBREW_GITHUB_API_TOKEN=b83d8ab2f881b0799a3084d8a75a9daf3bba5967
 export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
 export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
 
@@ -175,3 +175,5 @@ export NNN_FIFO=/tmp/nnn.fifo
 export NNN_PLUG='r:preview-tui'
 
 # eval "$(starship init zsh)"
+
+export PATH=/opt/homebrew/bin:$PATH
