@@ -20,6 +20,8 @@ export PATH="$N_PREFIX/bin:$PATH"
 path=($HOME/bin(N-/) /usr/local/go/bin(N-/) $path)
 # Export basic
 export PATH="$PATH:/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+# homebrew
+export PATH=/opt/homebrew/bin:$PATH
 # composer
 export COMPOSER_PATH="$HOME/.composer/vendor/bin"
 # origin commands dir
@@ -41,9 +43,11 @@ export RVENV_SHIMS="$HOME/.rbenv/shims"
 export RVENV_PATH="$HOME/.rbenv/bin"
 # heroku
 export HEROKU_PATH="/usr/local/heroku/bin"
+
 # Export additional item
 export PATH="$PATH:$COMPOSER_PATH:$MY_SCRIPT_PATH:$DOTFILES:$NODEBREW_PATH:$RVENV_SHIMS:$RVENV_PATH:$PYENV_PATH:$HEROKU_PATH:$ANYENV_PATH"
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH" # x86_64
+export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH" # arm64
 #export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
 
 # 文字コード設定
@@ -176,4 +180,10 @@ export NNN_PLUG='r:preview-tui'
 
 # eval "$(starship init zsh)"
 
-export PATH=/opt/homebrew/bin:$PATH
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home
+# export PATH="$JAVA_HOME:$PATH"
+export PATH="$PATH:/Users/katsuya.kubo/Library/Application Support/Coursier/bin"
+export PATH="$PATH:/Users/katsuya.kubo/Library/Application Support/JetBrains/Toolbox/scripts"
+
+# additonal prompt
+export PROMPT="($(arch))$PROMPT"

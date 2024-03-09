@@ -25,6 +25,8 @@ local function info(message)
     end
 end
 hs.hotkey.bind({'cmd', 'shift', 'ctrl'}, 'D', function() showInfo = not(showInfo) end)
+-- hs.utf8.registerCodepoint('dle', 0x2421)
+-- hs.utf8.registerCodepoint('dle', 0x10)
 --
 -- to switch eisuu/kana with single command press.
 --
@@ -34,10 +36,16 @@ switchInputMethod = hs.eventtap.new({hs.eventtap.event.types.flagsChanged},
     function(e) 
         local keyCode = e:getKeyCode()
         local isOpt = e:getFlags()['alt']
+        local isCtrl = e:getFlags()['ctrl']
         info("flagsChanged code:"..tostring(keyCode))
         info("flagsChanged flags:"..tostring(isOpt))
         if isOpt then
-            switchInputMethodPrevKey = keyCode
+            -- ことえりだとctrl+altで不可視文字が入ってしまうのでctrl+altが同時に押された場合は強制的に英語入力に切り替える
+            if isCtrl then
+                hs.eventtap.keyStroke({}, VK_EISUU)
+            else 
+                switchInputMethodPrevKey = keyCode
+            end
         else
             if switchInputMethodPrevKey == VK_LEFT_OPTION then
                 hs.eventtap.keyStroke({}, VK_EISUU)
@@ -57,8 +65,7 @@ switchInputMethodInvalidate = hs.eventtap.new({hs.eventtap.event.types.keyDown, 
 )
 switchInputMethodInvalidate:start()
 
-
-
+-- local log = hs.logger.new('mymodule','debug')
 
 --
 -- to emacs like keybindins in Xcode
@@ -244,6 +251,24 @@ emacsBindings = {
         pressKey({'ctrl'}, 'e')
         pressKey({'ctrl'}, 'w')
     end),
+    
+    -- disable kotoeri special character
+    -- createKeyRemap({}, 'F18', {'ctrl', 'alt'}, 'p'),
+    --[[
+    hs.hotkey.new({'ctrl', 'alt'}, 'p', {}, function()
+        log.i('hit1')
+        pressKey({'ctrl', 'alt'}, 'p')
+        -- pressKey({}, VK_EISUU)
+    end),
+    ]]--
+    
+    --[[
+    hs.hotkey.new({}, 'F18', {}, function() 
+        log.i('hit2')
+        pressKey({}, VK_EISUU)
+        pressKey({'ctrl', 'alt'}, 'p')
+    end),
+    ]]--
 }
 
 --[[
