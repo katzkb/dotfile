@@ -30,7 +30,7 @@ exec $SHELL
 
 ```sh
 cd ~
-git clone https://github.com/7kilobyte/dotfile.git
+git clone https://github.com/katzkb/dotfile.git
 cp -r dotfile/.* .
 ```
 
