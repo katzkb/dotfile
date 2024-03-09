@@ -1,9 +1,9 @@
 [core]
-	excludesfile = /Users/katsuya.kubo/.gitignore_global
+#    excludesfile = 
 	pager = delta
 [user]
-	name = Katsuya Kubo
-	email = katsuya.kubo@nextbeat.net
+#    name = 
+#    email = 
 [delta]
     features = side-by-side line-numbers decorations
     syntax-theme = Dracula
