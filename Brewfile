@@ -109,6 +109,7 @@ brew libiconv
 brew libidn
 brew libidn2
 brew libimobiledevice
+brew libimobiledevice-glue
 brew libksba
 brew liblqr
 brew libmicrohttpd
@@ -196,6 +197,7 @@ brew protobuf
 brew pugixml
 brew pycparser
 brew pyenv
+brew python-packaging
 brew python-setuptools
 brew python@3.10
 brew python@3.11
@@ -323,7 +325,7 @@ brew bloop
 tap shibukk/git-xlsx-textconv
 
 # App Store applications
-appstore 1569813296 1Password for Safari (2.20.0)
+appstore 1569813296 1Password for Safari (2.21.0)
 appstore 937984704 Amphetamine (5.3.2)
 appstore 549083868 Display Menu (2.2.5)
 appstore 688211836 EasyRes (1.1.4)
@@ -332,4 +334,5 @@ appstore 408981434 iMovie (10.3.6)
 appstore 409183694 Keynote (13.1)
 appstore 409203825 Numbers (13.1)
 appstore 409201541 Pages (13.1)
-appstore 1429033973 RunCat (10.3)
+appstore 1429033973 RunCat (11.0.3)
+appstore 497799835 Xcode (15.2)
