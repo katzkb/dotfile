@@ -48,7 +48,6 @@ export HEROKU_PATH="/usr/local/heroku/bin"
 export PATH="$PATH:$COMPOSER_PATH:$MY_SCRIPT_PATH:$DOTFILES:$NODEBREW_PATH:$RVENV_SHIMS:$RVENV_PATH:$PYENV_PATH:$HEROKU_PATH:$ANYENV_PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH" # x86_64
 export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH" # arm64
-#export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
 
 # 文字コード設定
 export LANG=ja_JP.UTF-8
@@ -101,9 +100,6 @@ export PATH="/usr/lib/:$PATH"
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:${PATH}
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 
-# Terminal
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-
 # enable color support of ls and also add handy aliases
 test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 alias ls='ls --g --color=auto'
@@ -114,9 +110,6 @@ alias egrep='egrep --color=auto'
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-#export COURSIER_TTL=1s
-
-#unalias mysql
 
 # go
 export GOROOT=/usr/local/opt/go/libexec
@@ -128,7 +121,6 @@ if [ $DOTFILES/.zshrc -nt ~/.zshrc.zwc ]; then
   zcompile ~/.zshrc
 fi
 
-# "
 export PATH="${HOME}/.scalaenv/bin:${PATH}"
 eval "$(scalaenv init -)"
 export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
@@ -141,14 +133,14 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 ###-tns-completion-start-###
 if [ -f /Users/katsuya.kubo/.tnsrc ]; then
-    source /Users/katsuya.kubo/.tnsrc
+    source "$HOME/.tnsrc"
 fi
 ###-tns-completion-end-###
 
 eval "$(fnm env --use-on-cd)"
 
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+#export PATH="$HOME/.jenv/bin:$PATH"
+#eval "$(jenv init -)"
 
 # Setting for angular project
 export NODE_OPTIONS="--max-old-space-size=4096"
@@ -164,7 +156,7 @@ printf "\e[?1042l"
 
 # Bun
 ## bun completions
-[ -s "/Users/katsuya.kubo/.bun/_bun" ] && source "/Users/katsuya.kubo/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 ## bun path
 export BUN_INSTALL="$HOME/.bun"
@@ -174,16 +166,24 @@ eval "$(direnv hook zsh)"
 
 eval "$(sheldon source)"
 
+# NNN Settings
+export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd" # always cd on quit
+
 # NNN Plugins
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_PLUG='r:preview-tui'
 
-# eval "$(starship init zsh)"
+export PATH="$PATH:$HOME/Library/Application Support/Coursier/bin"
+export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home
-# export PATH="$JAVA_HOME:$PATH"
-export PATH="$PATH:/Users/katsuya.kubo/Library/Application Support/Coursier/bin"
-export PATH="$PATH:/Users/katsuya.kubo/Library/Application Support/JetBrains/Toolbox/scripts"
-
-# additonal prompt
+# additional prompt
 export PROMPT="($(arch))$PROMPT"
+export PATH="/opt/homebrew/sbin:$PATH"
+
+# SDKMAN
+#export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
+#[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+source "/Users/katsuya.kubo/.sdkman/bin/sdkman-init.sh"
+
+# Android SDK
+export PATH=/Users/katsuya.kubo/Library/Android/sdk:$PATH
