@@ -274,6 +274,7 @@ cask applite
 cask coconutbattery
 cask coteditor
 cask docker
+cask firefox
 cask font-fira-code
 cask font-hackgen
 cask font-hackgen-nerd
