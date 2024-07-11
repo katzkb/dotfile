@@ -274,6 +274,9 @@ cask applite
 cask coconutbattery
 cask coteditor
 cask docker
+cask font-fira-code
+cask font-hackgen
+cask font-hackgen-nerd
 cask fuwari
 cask google-japanese-ime
 cask hammerspoon
@@ -296,9 +299,6 @@ cask zoom
 tap homebrew/bundle
 
 tap homebrew/cask-fonts
-cask font-fira-code
-cask font-hackgen
-cask font-hackgen-nerd
 
 tap homebrew/cask-versions
 
@@ -323,16 +323,3 @@ tap scalacenter/bloop
 brew bloop
 
 tap shibukk/git-xlsx-textconv
-
-# App Store applications
-appstore 1569813296 1Password for Safari (2.21.0)
-appstore 937984704 Amphetamine (5.3.2)
-appstore 549083868 Display Menu (2.2.5)
-appstore 688211836 EasyRes (1.1.4)
-appstore 682658836 GarageBand (10.4.8)
-appstore 408981434 iMovie (10.3.6)
-appstore 409183694 Keynote (13.1)
-appstore 409203825 Numbers (13.1)
-appstore 409201541 Pages (13.1)
-appstore 1429033973 RunCat (11.0.3)
-appstore 497799835 Xcode (15.2)
