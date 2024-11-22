@@ -9,6 +9,7 @@ brew aribb24
 brew autoconf
 brew automake
 brew avrdude
+brew aws-sam-cli
 brew awscli
 brew bash
 brew bash-completion@2
@@ -21,6 +22,7 @@ brew c-ares
 brew ca-certificates
 brew cairo
 brew capstone
+brew certifi
 brew cffi
 brew cjson
 brew clang-format
@@ -29,6 +31,7 @@ brew confuse
 brew coreutils
 brew coursier
 brew cowsay
+brew cryptography
 brew curl
 brew dav1d
 brew dfu-programmer
@@ -94,6 +97,7 @@ brew leptonica
 brew libarchive
 brew libass
 brew libassuan
+brew libassuan@2
 brew libavif
 brew libb2
 brew libbluray
@@ -157,6 +161,7 @@ brew lzo
 brew m4
 brew mbedtls
 brew memcached
+brew mkcert
 brew mpdecimal
 brew mpfr
 brew mpg123
@@ -170,6 +175,8 @@ brew nnn
 brew node
 brew notmuch
 brew npth
+brew nspr
+brew nss
 brew numpy
 brew oniguruma
 brew openblas
@@ -236,6 +243,7 @@ brew telnet
 brew tesseract
 brew texinfo
 brew tfenv
+brew tflint
 brew the_silver_searcher
 brew thefuck
 brew theora
@@ -245,6 +253,7 @@ brew tmuxinator
 brew tokyo-cabinet
 brew tree
 brew tree-sitter
+brew trivy
 brew unbound
 brew utf8proc
 brew vde
@@ -279,6 +288,8 @@ cask font-fira-code
 cask font-hackgen
 cask font-hackgen-nerd
 cask fuwari
+cask github
+cask google-chrome@canary
 cask google-japanese-ime
 cask hammerspoon
 cask itsycal
@@ -286,6 +297,7 @@ cask jetbrains-toolbox
 cask karabiner-elements
 cask keka
 cask klogg
+cask macdroid
 cask microsoft-edge
 cask obsidian
 cask postman
@@ -293,8 +305,10 @@ cask raycast
 cask secretive
 cask sequel-ace
 cask session-manager-plugin
+cask sketch
 cask utm
 cask visual-studio-code
+cask zeplin
 cask zoom
 
 tap homebrew/bundle
