@@ -78,7 +78,6 @@ brew hidapi
 brew highway
 brew hub
 brew hwloc
-brew icu4c
 brew imagemagick
 brew imath
 brew isl
@@ -102,6 +101,7 @@ brew libavif
 brew libb2
 brew libbluray
 brew libde265
+brew libdeflate
 brew libev
 brew libevent
 brew libftdi
@@ -135,6 +135,7 @@ brew libssh
 brew libssh2
 brew libtasn1
 brew libtiff
+brew libtommath
 brew libtool
 brew libunibreak
 brew libunistring
@@ -160,6 +161,7 @@ brew lz4
 brew lzo
 brew m4
 brew mbedtls
+brew md4c
 brew memcached
 brew mkcert
 brew mpdecimal
@@ -197,7 +199,6 @@ brew perl
 brew pinentry
 brew pinentry-mac
 brew pixman
-brew pkg-config
 brew plantuml
 brew pnpm
 brew protobuf
@@ -209,6 +210,7 @@ brew python-setuptools
 brew python@3.10
 brew python@3.11
 brew python@3.12
+brew python@3.13
 brew python@3.8
 brew python@3.9
 brew qemu
@@ -250,6 +252,7 @@ brew theora
 brew tig
 brew tmux
 brew tmuxinator
+brew tmuxinator-completion
 brew tokyo-cabinet
 brew tree
 brew tree-sitter
@@ -338,3 +341,7 @@ tap scalacenter/bloop
 brew bloop
 
 tap shibukk/git-xlsx-textconv
+
+# Other Homebrew packages
+brew icu4c
+brew pkg-config
