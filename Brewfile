@@ -181,6 +181,7 @@ brew nspr
 brew nss
 brew numpy
 brew oniguruma
+brew onnx
 brew openblas
 brew opencore-amr
 brew openexr
@@ -227,6 +228,7 @@ brew sbt
 brew scalaenv
 brew sdl2
 brew sendemail
+brew sfsexp
 brew shared-mime-info
 brew sheldon
 brew six
@@ -245,7 +247,6 @@ brew telnet
 brew tesseract
 brew texinfo
 brew tfenv
-brew tflint
 brew the_silver_searcher
 brew thefuck
 brew theora
@@ -256,7 +257,6 @@ brew tmuxinator-completion
 brew tokyo-cabinet
 brew tree
 brew tree-sitter
-brew trivy
 brew unbound
 brew utf8proc
 brew vde
@@ -322,6 +322,8 @@ tap homebrew/cask-versions
 
 tap homebrew/services
 
+tap aquasecurity/trivy
+
 tap auth0/auth0-cli
 brew auth0
 
@@ -343,5 +345,6 @@ brew bloop
 tap shibukk/git-xlsx-textconv
 
 # Other Homebrew packages
+brew aqua
 brew icu4c
 brew pkg-config
