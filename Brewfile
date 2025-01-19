@@ -247,6 +247,7 @@ brew telnet
 brew tesseract
 brew texinfo
 brew tfenv
+brew tflint
 brew the_silver_searcher
 brew thefuck
 brew theora
@@ -257,6 +258,7 @@ brew tmuxinator-completion
 brew tokyo-cabinet
 brew tree
 brew tree-sitter
+brew trivy
 brew unbound
 brew utf8proc
 brew vde
@@ -345,6 +347,5 @@ brew bloop
 tap shibukk/git-xlsx-textconv
 
 # Other Homebrew packages
-brew aqua
 brew icu4c
 brew pkg-config
