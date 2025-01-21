@@ -6,6 +6,7 @@ brew abseil
 brew angular-cli
 brew aom
 brew aribb24
+brew assimp
 brew autoconf
 brew automake
 brew avrdude
@@ -34,10 +35,12 @@ brew cowsay
 brew cryptography
 brew curl
 brew dav1d
+brew dbus
 brew dfu-programmer
 brew dfu-util
 brew direnv
 brew docutils
+brew double-conversion
 brew dtc
 brew emacs
 brew exiftool
@@ -77,6 +80,7 @@ brew harfbuzz
 brew hidapi
 brew highway
 brew hub
+brew hunspell
 brew hwloc
 brew imagemagick
 brew imath
@@ -117,6 +121,7 @@ brew libimobiledevice-glue
 brew libksba
 brew liblqr
 brew libmicrohttpd
+brew libmng
 brew libmpc
 brew libnghttp2
 brew libogg
@@ -167,7 +172,6 @@ brew mkcert
 brew mpdecimal
 brew mpfr
 brew mpg123
-brew mysql@5.7
 brew ncurses
 brew neomutt
 brew netpbm
@@ -188,7 +192,6 @@ brew openexr
 brew openjdk
 brew openjpeg
 brew openldap
-brew openssl@1.1
 brew openssl@3
 brew openvino
 brew opus
@@ -212,9 +215,9 @@ brew python@3.10
 brew python@3.11
 brew python@3.12
 brew python@3.13
-brew python@3.8
 brew python@3.9
 brew qemu
+brew qt
 brew qt@5
 brew rav1e
 brew rbenv
@@ -285,6 +288,7 @@ cask alt-tab
 cask android-commandlinetools
 cask appcleaner
 cask applite
+cask bloop
 cask coconutbattery
 cask coteditor
 cask docker
@@ -318,8 +322,6 @@ cask zoom
 
 tap homebrew/bundle
 
-tap homebrew/cask-versions
-
 tap homebrew/services
 
 tap aquasecurity/trivy
@@ -340,10 +342,13 @@ tap rcmdnk/file
 brew brew-file
 
 tap scalacenter/bloop
-brew bloop
 
 tap shibukk/git-xlsx-textconv
 
 # Other Homebrew packages
 brew icu4c
 brew pkg-config
+
+# App Store applications
+appstore 688211836 EasyRes (1.1.4)
+appstore 1429033973 RunCat (11.4)
