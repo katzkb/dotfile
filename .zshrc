@@ -185,10 +185,10 @@ export PATH="/opt/homebrew/sbin:$PATH"
 # SDKMAN
 #export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
 #[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
-source "/Users/katsuya.kubo/.sdkman/bin/sdkman-init.sh"
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Android SDK
-export PATH=/Users/katsuya.kubo/Library/Android/sdk:$PATH
+export PATH="$HOME/Library/Android/sdk:$PATH"
 
 
 # Load Angular CLI autocompletion.
