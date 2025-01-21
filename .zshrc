@@ -72,6 +72,8 @@ alias ys="yarn start"
 alias ghc="git checkout develop"
 alias nn="nnn -deHa -aP r"
 
+alias gcleanup="$HOME/scripts/cleanup_branches.sh"
+
 # No beep
 setopt nolistbeep
 
@@ -187,3 +189,10 @@ source "/Users/katsuya.kubo/.sdkman/bin/sdkman-init.sh"
 
 # Android SDK
 export PATH=/Users/katsuya.kubo/Library/Android/sdk:$PATH
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# for aqua cli https://aquaproj.github.io/docs/install/
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
