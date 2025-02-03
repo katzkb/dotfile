@@ -6,6 +6,7 @@ brew abseil
 brew angular-cli
 brew aom
 brew aribb24
+brew assimp
 brew autoconf
 brew automake
 brew avrdude
@@ -34,10 +35,12 @@ brew cowsay
 brew cryptography
 brew curl
 brew dav1d
+brew dbus
 brew dfu-programmer
 brew dfu-util
 brew direnv
 brew docutils
+brew double-conversion
 brew dtc
 brew emacs
 brew exiftool
@@ -77,6 +80,7 @@ brew harfbuzz
 brew hidapi
 brew highway
 brew hub
+brew hunspell
 brew hwloc
 brew imagemagick
 brew imath
@@ -100,10 +104,12 @@ brew libassuan@2
 brew libavif
 brew libb2
 brew libbluray
+brew libcbor
 brew libde265
 brew libdeflate
 brew libev
 brew libevent
+brew libfido2
 brew libftdi
 brew libgcrypt
 brew libgit2
@@ -117,6 +123,7 @@ brew libimobiledevice-glue
 brew libksba
 brew liblqr
 brew libmicrohttpd
+brew libmng
 brew libmpc
 brew libnghttp2
 brew libogg
@@ -160,6 +167,7 @@ brew lua
 brew lz4
 brew lzo
 brew m4
+brew mas
 brew mbedtls
 brew md4c
 brew memcached
@@ -167,7 +175,7 @@ brew mkcert
 brew mpdecimal
 brew mpfr
 brew mpg123
-brew mysql@5.7
+brew mysql@8.0
 brew ncurses
 brew neomutt
 brew netpbm
@@ -188,7 +196,6 @@ brew openexr
 brew openjdk
 brew openjpeg
 brew openldap
-brew openssl@1.1
 brew openssl@3
 brew openvino
 brew opus
@@ -212,9 +219,9 @@ brew python@3.10
 brew python@3.11
 brew python@3.12
 brew python@3.13
-brew python@3.8
 brew python@3.9
 brew qemu
+brew qt
 brew qt@5
 brew rav1e
 brew rbenv
@@ -247,6 +254,7 @@ brew telnet
 brew tesseract
 brew texinfo
 brew tfenv
+brew tflint
 brew the_silver_searcher
 brew thefuck
 brew theora
@@ -257,6 +265,7 @@ brew tmuxinator-completion
 brew tokyo-cabinet
 brew tree
 brew tree-sitter
+brew trivy
 brew unbound
 brew utf8proc
 brew vde
@@ -272,6 +281,7 @@ brew xz
 brew yarn
 brew zeromq
 brew zimg
+brew zlib
 brew zsh
 brew zstd
 
@@ -283,7 +293,7 @@ cask alt-tab
 cask android-commandlinetools
 cask appcleaner
 cask applite
-cask aqua
+cask bloop
 cask coconutbattery
 cask coteditor
 cask docker
@@ -319,6 +329,9 @@ tap homebrew/bundle
 
 tap homebrew/services
 
+tap aquaproj/aqua
+brew aqua
+
 tap aquasecurity/trivy
 
 tap auth0/auth0-cli
@@ -337,9 +350,11 @@ tap rcmdnk/file
 brew brew-file
 
 tap scalacenter/bloop
-brew bloop
 
 tap shibukk/git-xlsx-textconv
+
+tap virtuslab/scala-cli
+brew scala-cli
 
 # Other Homebrew packages
 brew icu4c
