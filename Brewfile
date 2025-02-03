@@ -100,7 +100,6 @@ brew leptonica
 brew libarchive
 brew libass
 brew libassuan
-brew libassuan@2
 brew libavif
 brew libb2
 brew libbluray
