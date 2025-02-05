@@ -100,6 +100,7 @@ brew leptonica
 brew libarchive
 brew libass
 brew libassuan
+brew libassuan@2
 brew libavif
 brew libb2
 brew libbluray
@@ -226,6 +227,7 @@ brew rav1e
 brew rbenv
 brew readline
 brew reattach-to-user-namespace
+brew repomix
 brew rtmpdump
 brew rubberband
 brew ruby
@@ -262,6 +264,7 @@ brew tmux
 brew tmuxinator
 brew tmuxinator-completion
 brew tokyo-cabinet
+brew toxiproxy
 brew tree
 brew tree-sitter
 brew trivy
