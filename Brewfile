@@ -310,6 +310,7 @@ cask github
 cask google-chrome@canary
 cask google-japanese-ime
 cask hammerspoon
+cask iina
 cask itsycal
 cask jetbrains-toolbox
 cask karabiner-elements
@@ -362,11 +363,3 @@ brew scala-cli
 # Other Homebrew packages
 brew icu4c
 brew pkg-config
-
-# App Store applications
-appstore 1569813296 1Password for Safari (8.10.58)
-appstore 937984704 Amphetamine (5.3.2)
-appstore 688211836 EasyRes (1.1.4)
-appstore 6727014156 fullmoon (1.2)
-appstore 539883307 LINE (9.5.0)
-appstore 1429033973 RunCat (11.4)
