@@ -95,6 +95,7 @@ brew jpeg-turbo
 brew jpeg-xl
 brew jq
 brew jsoncpp
+brew krb5
 brew lame
 brew leptonica
 brew libarchive
@@ -188,6 +189,7 @@ brew npth
 brew nspr
 brew nss
 brew numpy
+brew ollama
 brew oniguruma
 brew onnx
 brew openblas
@@ -209,6 +211,7 @@ brew pinentry-mac
 brew pixman
 brew plantuml
 brew pnpm
+brew postgresql@14
 brew protobuf
 brew pugixml
 brew pycparser
@@ -271,6 +274,7 @@ brew trivy
 brew unbound
 brew utf8proc
 brew vde
+brew vercel-cli
 brew viu
 brew webp
 brew x264
@@ -301,6 +305,7 @@ cask bloop
 cask chatgpt
 cask coconutbattery
 cask coteditor
+cask cursor
 cask docker
 cask firefox
 cask font-fira-code
@@ -328,6 +333,7 @@ cask session-manager-plugin
 cask sketch
 cask utm
 cask visual-studio-code
+cask windsurf
 cask zeplin
 cask zoom
 
