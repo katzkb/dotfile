@@ -196,3 +196,5 @@ source <(ng completion script)
 
 # for aqua cli https://aquaproj.github.io/docs/install/
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
+
+export GH_PAGER=cat 
