@@ -5,6 +5,7 @@ tap homebrew/core
 brew abseil
 brew angular-cli
 brew aom
+brew aqua
 brew aribb24
 brew assimp
 brew autoconf
@@ -44,6 +45,7 @@ brew double-conversion
 brew dtc
 brew emacs
 brew exiftool
+brew expat
 brew ffmpeg
 brew figlet
 brew flac
@@ -299,8 +301,6 @@ cask alt-tab
 cask android-commandlinetools
 cask appcleaner
 cask applite
-cask aqua
-cask arc
 cask bloop
 cask chatgpt
 cask coconutbattery
@@ -334,6 +334,7 @@ cask sketch
 cask utm
 cask visual-studio-code
 cask windsurf
+cask visual-studio-code@insiders
 cask zeplin
 cask zoom
 
