@@ -295,8 +295,6 @@ cask alt-tab
 cask android-commandlinetools
 cask appcleaner
 cask applite
-cask aqua
-cask arc
 cask bloop
 cask chatgpt
 cask coconutbattery
@@ -328,6 +326,7 @@ cask session-manager-plugin
 cask sketch
 cask utm
 cask visual-studio-code
+cask visual-studio-code@insiders
 cask zeplin
 cask zoom
 
@@ -336,6 +335,7 @@ tap homebrew/bundle
 tap homebrew/services
 
 tap aquaproj/aqua
+brew aqua
 
 tap aquasecurity/trivy
 
