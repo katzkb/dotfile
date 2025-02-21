@@ -5,6 +5,7 @@ tap homebrew/core
 brew abseil
 brew angular-cli
 brew aom
+brew aqua
 brew aribb24
 brew assimp
 brew autoconf
@@ -44,6 +45,7 @@ brew double-conversion
 brew dtc
 brew emacs
 brew exiftool
+brew expat
 brew ffmpeg
 brew figlet
 brew flac
@@ -335,7 +337,6 @@ tap homebrew/bundle
 tap homebrew/services
 
 tap aquaproj/aqua
-brew aqua
 
 tap aquasecurity/trivy
 
