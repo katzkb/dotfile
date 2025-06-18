@@ -48,6 +48,7 @@ export HEROKU_PATH="/usr/local/heroku/bin"
 export PATH="$PATH:$COMPOSER_PATH:$MY_SCRIPT_PATH:$DOTFILES:$NODEBREW_PATH:$RVENV_SHIMS:$RVENV_PATH:$PYENV_PATH:$HEROKU_PATH:$ANYENV_PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH" # x86_64
 export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH" # arm64
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH" # arm64
 
 # 文字コード設定
 export LANG=ja_JP.UTF-8
