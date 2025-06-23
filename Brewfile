@@ -339,9 +339,9 @@ cask windsurf
 cask zeplin
 cask zoom
 
-tap homebrew/bundle
+#tap homebrew/bundle
 
-tap homebrew/services
+#tap homebrew/services
 
 tap aquaproj/aqua
 
