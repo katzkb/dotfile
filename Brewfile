@@ -372,3 +372,5 @@ brew scala-cli
 # Other Homebrew packages
 brew icu4c
 brew pkg-config
+
+file ~/.local_brewfile
