@@ -1,0 +1,37 @@
+font-family = HackGen35 Console NF
+font-size = 14.0
+
+#font-family = x14y24pxHeadUpDaisy
+#font-size = 16.0
+
+font-style = Regular
+font-thicken
+
+background-opacity = 0.70
+background-blur-radius = 20
+
+theme = Catppuccin Macchiato
+
+shell-integration = zsh
+shell-integration-features = no-cursor
+
+cursor-style = block
+cursor-style-blink = false
+
+# window-padding-x = 20
+# window-padding-y = 5
+# window-padding-balance = true
+window-theme = ghostty
+
+#fullscreen
+#macos-non-native-fullscreen = true
+macos-titlebar-style = transparent
+
+title = "👻"
+macos-titlebar-proxy-icon = hidden
+
+# macos-icon = glass
+macos-icon = custom-style
+macos-icon-frame = "beige"
+macos-icon-ghost-color = FF0033
+macos-icon-screen-color = 06C756
