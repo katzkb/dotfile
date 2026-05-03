@@ -15,7 +15,7 @@ theme = Catppuccin Macchiato
 shell-integration = zsh
 shell-integration-features = no-cursor
 
-cursor-style = block
+cursor-style = block_hollow
 cursor-style-blink = false
 
 # window-padding-x = 20
