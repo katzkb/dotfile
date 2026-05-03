@@ -45,4 +45,8 @@ custom-shader = ./shaders/glow-mauve.glsl
 # custom-shader = ./shaders/glow-teal.glsl
 custom-shader = ./shaders/ripple-mauve.glsl
 # custom-shader = ./shaders/ripple-teal.glsl
+# Murasaki (虚式・茈) — comment out the chain above & uncomment one to try
+# custom-shader = ./shaders/murasaki-vortex.glsl
+# custom-shader = ./shaders/murasaki-orbital.glsl
+# custom-shader = ./shaders/murasaki-distortion.glsl
 custom-shader-animation = always
