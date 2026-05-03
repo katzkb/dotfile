@@ -35,3 +35,14 @@ macos-icon = custom-style
 macos-icon-frame = "beige"
 macos-icon-ghost-color = FF0033
 macos-icon-screen-color = 06C756
+
+# Cursor shaders
+# Existing pack (active)
+custom-shader = ./shader/cursor_warp.glsl
+# custom-shader = ./shader/ripple_cursor.glsl
+# Self-built — uncomment one to switch (mood-based)
+custom-shader = ./shaders/glow-mauve.glsl
+# custom-shader = ./shaders/glow-teal.glsl
+custom-shader = ./shaders/ripple-mauve.glsl
+# custom-shader = ./shaders/ripple-teal.glsl
+custom-shader-animation = always
